@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Yamba</string>
+
+    <string name="youremail">Votre Email</string>
+    <string name="yourpassword">Votre Password</string>
+    <string name="passwordforget">Password Forget</string>
+    <string name="inscript">Register</string>
+</resources>

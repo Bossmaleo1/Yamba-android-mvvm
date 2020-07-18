@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Yamba</string>
+
+    <string name="youremail">Your Email</string>
+    <string name="yourpassword">Your Password</string>
+    <string name="passwordforget">Password Forget</string>
+    <string name="inscript">Register</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
