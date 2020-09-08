@@ -1,4 +1,4 @@
-package com.yamba.android.view
+package com.yamba.android.presentation.fragmentdialog
 
 import android.content.Context
 import android.os.Bundle
@@ -35,8 +35,9 @@ class ProgressbarDialogFragment : DialogFragment() {
     }
 
     companion object {
-        fun newInstance(content:String) : ProgressbarDialogFragment  {
-            val f = ProgressbarDialogFragment()
+        fun newInstance(content:String) : ProgressbarDialogFragment {
+            val f =
+                ProgressbarDialogFragment()
 
             val args = Bundle()
             args.putString("content",content)

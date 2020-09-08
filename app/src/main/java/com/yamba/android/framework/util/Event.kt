@@ -1,4 +1,4 @@
-package com.yamba.android.util
+package com.yamba.android.framework.util
 
 /**
  * Used as a wrapper for data that is exposed via a LiveData that represents an event.

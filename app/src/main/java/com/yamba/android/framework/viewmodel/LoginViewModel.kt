@@ -1,4 +1,4 @@
-package com.yamba.android.viewmodel
+package com.yamba.android.framework.viewmodel
 
 import android.app.Application
 import androidx.databinding.Bindable
@@ -6,8 +6,8 @@ import androidx.databinding.Observable
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.yamba.android.framework.util.Event
 import com.yamba.android.R
-import com.yamba.android.util.Event
 
 class LoginViewModel (application: Application) : AndroidViewModel(application), Observable {
 

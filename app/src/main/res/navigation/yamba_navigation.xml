@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/launchFragment"
-        android:name="com.yamba.android.view.LaunchFragment"
+        android:name="com.yamba.android.presentation.fragment.LaunchFragment"
         android:label="fragment_launch"
         tools:layout="@layout/fragment_launch" >
         <action
@@ -17,12 +17,12 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.yamba.android.view.HomeFragment"
+        android:name="com.yamba.android.presentation.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.yamba.android.view.LoginFragment"
+        android:name="com.yamba.android.presentation.fragment.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" />
 </navigation>

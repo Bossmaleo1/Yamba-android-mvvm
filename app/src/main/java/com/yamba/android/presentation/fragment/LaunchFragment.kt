@@ -1,4 +1,4 @@
-package com.yamba.android.view
+package com.yamba.android.presentation.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

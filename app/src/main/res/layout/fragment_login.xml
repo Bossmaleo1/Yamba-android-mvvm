@@ -7,7 +7,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.yamba.android.viewmodel.LoginViewModel" />
+            type="com.yamba.android.framework.viewmodel.LoginViewModel" />
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout

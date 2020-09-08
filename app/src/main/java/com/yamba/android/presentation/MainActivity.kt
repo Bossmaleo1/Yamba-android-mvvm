@@ -1,4 +1,4 @@
-package com.yamba.android.view
+package com.yamba.android.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.yamba.android.view
+package com.yamba.android.presentation.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,11 +9,10 @@ import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.yamba.android.R
-import com.yamba.android.databinding.FragmentLaunchBinding
 import com.yamba.android.databinding.FragmentLoginBinding
-import com.yamba.android.viewmodel.LoginViewModel
+import com.yamba.android.framework.viewmodel.LoginViewModel
 
 
 class LoginFragment : Fragment() {
@@ -21,22 +20,17 @@ class LoginFragment : Fragment() {
     private lateinit var viewModel: LoginViewModel
     private lateinit var binding: FragmentLoginBinding
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container,false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
 
         (activity as AppCompatActivity?)!!.setSupportActionBar(binding.toolbar)
         val actionbar = (activity as AppCompatActivity?)!!.supportActionBar
-        actionbar!!.title =  "Yamba"
+        actionbar!!.title = "Yamba"
         actionbar!!.setDisplayHomeAsUpEnabled(false)
         actionbar!!.setDisplayShowHomeEnabled(true)
 
@@ -51,14 +45,10 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(LoginViewModel::class.java)
 
         binding.viewModel = viewModel
         binding.lifecycleOwner = this
-
-
-
-
 
         //method to custom onBackPressed in our Fragment
         val callback: OnBackPressedCallback =
@@ -78,7 +68,7 @@ class LoginFragment : Fragment() {
         binding.connexion.setOnClickListener {
             viewModel.message.observe(this, Observer {
                 it.getContentIfNotHandled()?.let {
-                    Toast.makeText(activity,it, Toast.LENGTH_LONG).show()
+                    Toast.makeText(activity, it, Toast.LENGTH_LONG).show()
                 }
 
             })
@@ -88,11 +78,11 @@ class LoginFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater.inflate(R.menu.menu_inscript,menu)
+        inflater.inflate(R.menu.menu_inscript, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
+        when (item.itemId) {
 
             R.id.inscript -> {
 
