@@ -1,4 +1,4 @@
-package com.yamba.android.framework.model.usercase
+package com.yamba.android.framework.model.usecase
 
 import com.dagger.core.usecase.AddUser
 import com.dagger.core.usecase.GetAllUser
