@@ -96,4 +96,7 @@ dependencies {
     //our mockito dependencie
     testImplementation "org.mockito:mockito-inline:$mockitoVersion"
 
+    //biometric authentification dependencie
+    implementation "androidx.biometric:biometric:$biometric_version"
+
 }

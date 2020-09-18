@@ -13,7 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/ThemeYambaLight">
 
-        <activity android:name="com.yamba.android.presentation.MainActivity">
+        <activity
+            android:name="com.yamba.android.presentation.MainActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

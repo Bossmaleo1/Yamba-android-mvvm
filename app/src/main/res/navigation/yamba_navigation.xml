@@ -24,5 +24,9 @@
         android:id="@+id/loginFragment"
         android:name="com.yamba.android.presentation.fragment.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/login_to_home"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
